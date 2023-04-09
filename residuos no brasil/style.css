@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #f2f2f2;
+    font-family: "Roboto", sans-serif;
+    height: auto;
+  }
+
+  .head{
+    background-color: #192537;
+    width: 100%;
+ }
+ 
+ .logoeco{
+   width: 395px;
+   height: 131px;
+   object-fit: cover;
+ }
+ 
+ 
+ .menu{
+   font-size: 25px;
+   border: 0;
+   color: #f2f2f2;
+   background-color: #192537;
+   margin-left: 70px;
+ }
+
+ .serviços{
+    font-size: 70px;
+    text-align: center;
+    color: #6EA4CA;
+   }
+
+.lixoes{
+    display: table-cell;
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.texto{
+display: table-cell;
+width: 800px;
+height: 200px;
+
+
+}
+
+.lixo{
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 1200px;
+   
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #0C3C60;
+ }
+
