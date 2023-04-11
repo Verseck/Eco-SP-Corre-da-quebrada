@@ -12,7 +12,7 @@
   }
   
   .head{
-   background-color: #192537;
+   background-color: #004c33;
    width: 100%;
 }
 
@@ -27,7 +27,7 @@
   font-size: 25px;
   border: 0;
   color: #f2f2f2;
-  background-color: #192537;
+  background-color: #004c33;
   margin-left: 70px;
 }
 
@@ -39,12 +39,13 @@
 
 .solucao{
  text-align: center;
- color: #0c3c60;
+ color: #004c33;
  
 }
 
 .eletronica{
-  background-color: #0c3c60;
+  background-color: #004C33;
+  border: #0f8118 10px solid;
   width: 300px;
   height: 367px;
   text-align: center;
@@ -54,7 +55,7 @@
 }
 
 .serv{
-  color: #D1E0EB;
+  color: #FFFF;
   height: 80px;
 }
 
@@ -62,8 +63,8 @@
   padding: 5px;
   border-radius: 7px;
   border: 0;
-  background-color: #6ea4ca;
-  color: #FFFF;
+  background-color: #FFFF;
+  color: #004c33;
   margin-top: 20px;
   
 }
@@ -85,13 +86,13 @@
 
 article{
   height: 600px;
-  background-color: #D1E0EB;
+  background-color: #0f8118;
 }
 
 .sobre{
  text-align: center;
  font-size: 60px;
- color: #0c3c60;
+ color: #FFFF;
 }
 
 #tudo{
@@ -99,22 +100,22 @@ article{
   background-color: black;
   margin-left: 370px;
   text-align: center;
-  background-color: #D1E0EB;
-  color: #0c3c60;
+  background-color: #0f8118;
+  color: #FFFF;
   font-size: 20px;
 }
 
 .Leia{
  border: 0;
  padding: 10px;
- border-radius: 7px;
+ border-radius: 20px;
  width: 200px;
  background-color: #0c3c60;
  color: #FFFF;
 }
 
 .formu{
-background-color:#0c3c60;
+background-color:#004c33;
 width: 100%;
 height: 700px;
 }
@@ -135,8 +136,8 @@ height: 700px;
  padding: 15px;
  border-radius: 7px;
  width: 200px;
- background-color: #0c3c60;
- color: #FFFF;
+ background-color: #FFFF;
+ color: #004c33;
  margin-left: 43%;
 }
 
@@ -182,6 +183,7 @@ button:hover {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  color: #004c33;
 }
 
 .modal-body p {
@@ -214,7 +216,7 @@ button:hover {
   border: 0;
   border-radius: 20px;
   padding: 20px;
-  background-color: #0c3c60;
+  background-color: #004c33;
   color: #FFFF;
 }
 
@@ -312,4 +314,18 @@ footer{
 	vertical-align: top;
 	font-size: 30px;
 	color: #ffffff;
+}
+
+.text-dois{
+  display: flex;
+  align-items: center;
+  margin-left: 450px;
+  gap: 20px;
+}
+
+.text-um{
+  display: flex;
+  align-items: center;
+  margin-left: 450px;
+  gap: 20px;
 }

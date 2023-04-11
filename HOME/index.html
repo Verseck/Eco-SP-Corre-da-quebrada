@@ -13,6 +13,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="../assets/Logo ECO.webp" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -62,13 +63,13 @@
 
   <article class="urna">
 
-    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br> 
 
-    <h6 class="solucao" style="font-size: 20px;">BUSCANDO SOLUÇÕES INOVADORAS</h6>
-    <h1 class="solucao" style="font-size: 50px;">CONQUISTANDO RESULTADOS</h1>
+    <h6 data-aos="fade-right" data-aos-duration="2000" class="solucao" style="font-size: 20px;">BUSCANDO SOLUÇÕES INOVADORAS</h6>
+    <h1 data-aos="fade-right" data-aos-duration="2000" class="solucao" style="font-size: 50px;">CONQUISTANDO RESULTADOS</h1>
 
-    <div class="principal">
-      <div class="eletronica">
+    <div  class="principal">
+      <div data-aos="fade-right" data-aos-duration="2000" class="eletronica">
         <br>
         <h2 class="serv">SERVIÇOS</h2>
         <p>Trabalhamos para que sua empresa possa ajudar a cuidar do planeta , preservando, executando logística
@@ -80,7 +81,7 @@
 
       </div>
 
-      <div class="eletronica">
+      <div data-aos="fade-left" data-aos-duration="2000" class="eletronica">
         <br>
         <h2 class="serv">RESÍDUOS NO BRASIL</h2>
         <p>Segundo o Panorama dos Resíduos Sólidos 2018/2019 elaborado pela Associação Brasileira das Empresas de
@@ -94,11 +95,11 @@
 
   </article>
 
-  <article>
+  <article >
     <br><br><br><br>
-    <h1 id="ancora" class="sobre">SOBRE NÓS</h1>
+    <h1 data-aos="fade-left" data-aos-duration="2000" id="ancora" class="sobre">SOBRE NÓS</h1>
 
-    <div id="tudo">
+    <div data-aos="fade-left" data-aos-duration="2000" id="tudo">
       <p>Eco São Paulo nasceu com o objetivo de oferecer soluções ambientalmente corretas às empresas, apresentando,
         implantando e gerenciando inovações tecnológicas disponíveis no planeta para a correta deposição final dos
         Resíduos Sólidos Urbanos e Resíduos da Construção Civil. Temos como foco a preservação do meio ambiente e a
@@ -108,7 +109,7 @@
       </p>
       
     </div>
-    <button id="open-modal">SAIBA MAIS</button>
+    <button data-aos="fade-left" data-aos-duration="2000"  id="open-modal">SAIBA MAIS</button>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
       <div class="modal-header">
@@ -135,22 +136,26 @@
     <article class="formu" id="ancoradois">
        <br><br><br><br><h1 class="fale">FALE CONOSCO</h1>
 
-      <br><br><br> <form class="formulario" action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+      <br><br> <form class="formulario"> 
         <input type="hidden" name="recipient" value="jeferson@usinasecosp.com.br"> 
         <input type="hidden" name="redirect" value="http://127.0.0.1:5500/HOME/home.html"> 
         <input type="hidden" name="subject" value="mensagem enviada">  
         <input type="hidden" name="email" value="marcelo@usinasecosp.com.br">   
         
+        <div class="text-um">
           <p> 
           Nome:<br /> 
-          <input type="text" size="30" name="nome"> 
+          <input id="nono" type="text" size="30" name="nome"> 
           </p>   
         
           <p>
           E-mail:<br /> 
           <input type="text" size="30" name="replyto"> 
           </p>   
+
+        </div>
         
+        <div class="text-dois">
           <p> 
           Telefone:<br /> 
           <input type="text" size="30" height="" name="Telefone"> 
@@ -160,9 +165,11 @@
           Comentário:<br /> 
           <input type="text" size="30" height="" name="Comentarios"> 
           </p>  
+
+        </div>
         
         <p> 
-        <input class="saiba" type="submit" name="BTEnvia" value="Enviar"> 
+        <input class="saiba" onclick="mostrar()" type="submit" name="BTEnvia" value="Enviar"> 
         <input class="saiba" type="reset" name="BTApaga" value="Apagar"> </p> 
         
         <div class="contato">
@@ -205,16 +212,13 @@
       </div>
       </div>
     </footer>
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-
+    
+    
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js%22%3E"></script>
-    <script>new window.VLibras.Widget("https://vlibras.gov.br/app%22);</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 

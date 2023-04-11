@@ -11,3 +11,9 @@ const toggleModal = () => {
 [openModalButton, closeModalButton, fade].forEach((el) => {
   el.addEventListener("click", () => toggleModal());
 });
+
+const nono = document.querySelector("#nono")
+
+function mostrar(){alert(nono.value+"     Sua mensagem foi enviada")
+  
+}
