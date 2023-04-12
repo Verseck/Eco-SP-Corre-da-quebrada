@@ -12,7 +12,7 @@
   }
 
   .head{
-    background-color: #192537;
+    background-color: #004c33;
     width: 100%;
  }
  
@@ -27,14 +27,14 @@
    font-size: 25px;
    border: 0;
    color: #f2f2f2;
-   background-color: #192537;
+   background-color: #004c33;
    margin-left: 70px;
  }
 
  .serviços{
   font-size: 70px;
   text-align: center;
-  color: #6EA4CA;
+  color: #004c33;
  }
 
  .dv{
@@ -46,7 +46,7 @@
     width: 800px;
     margin-left: 350px ;
     font-size: 20px;
-    color: #0C3C60;
+    color: #004c33;
  }
 
  .um{
@@ -62,17 +62,17 @@
     background-color: #ffff;margin-left: 100px;
     height: 400px;
     margin-top: 100px;
-    margin-left: 600px;
+    margin-left: 580px;
  }
 
  .letra{
     text-align: center;
-    color: #0C3C60;
+    color: #0d5313;
  }
 
  .letras{
     text-align: center;
-    color: #0C3C60;
+    color: #0d5313;
     font-size: 18px;
  }
 
@@ -81,7 +81,7 @@
     background-color: #ffff;margin-left: 100px;
     height: 400px;
     
-    margin-left: 600px;
+    margin-left: 580px;
     margin-top: 100px;
     
    
@@ -99,5 +99,5 @@
  .footer{
     width: 100%;
     height: 200px;
-    background-color: #0C3C60;
+    background-color: #0d5313;
  }

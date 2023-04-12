@@ -12,7 +12,7 @@
   }
 
   .head{
-    background-color: #192537;
+    background-color: #004c33;
     width: 100%;
  }
  
@@ -27,14 +27,14 @@
    font-size: 25px;
    border: 0;
    color: #f2f2f2;
-   background-color: #192537;
+   background-color: #004c33;
    margin-left: 70px;
  }
 
  .serviços{
     font-size: 70px;
     text-align: center;
-    color: #6EA4CA;
+    color: #004c33;
    }
 
 .lixoes{
@@ -62,6 +62,6 @@ height: 200px;
 .footer{
     width: 100%;
     height: 200px;
-    background-color: #0C3C60;
+    background-color: #0d5313;
  }
 
