@@ -176,6 +176,20 @@ button:hover {
   z-index: 10;
 }
 
+#modal-dois {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 700px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
 #fade,
 #modal {
   transition: 0.5s;
