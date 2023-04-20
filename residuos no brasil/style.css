@@ -149,7 +149,7 @@ button:hover {
   z-index: 5;
 }
 
-#fade {
+#fade, #fadedois {
   position: fixed;
   top: 0;
   left: 0;
@@ -159,7 +159,7 @@ button:hover {
   z-index: 5;
 }
 
-#modal {
+#modal, #modaldois {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -174,7 +174,8 @@ button:hover {
 }
 
 #fade,
-#modal {
+#modal, #fadedois,
+#modaldois {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
@@ -207,16 +208,17 @@ button:hover {
 }
 
 #modal.hide,
-#fade.hide {
+#fade.hide, #modaldois.hide,
+#fadedois.hide  {
   opacity: 0;
   pointer-events: none;
 }
 
-#modal.hide {
+#modal.hide, #modaldois.hide {
   top: 0;
 }
 
-#close-modal{
+#close-modal, #close-dois {
   border: 0;
   border-radius: 20px;
   padding: 20px;

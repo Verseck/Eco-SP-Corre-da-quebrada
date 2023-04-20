@@ -15,12 +15,12 @@ const toggleModal = () => {
 
 const openModalBdois = document.querySelector("#open-dois");
 const closeModalBdois = document.querySelector("#close-dois");
-const modaldois = document.querySelector("#modal");
-const fadedois = document.querySelector("#fade");
+const modaldois = document.querySelector("#modaldois");
+const fadedois = document.querySelector("#fadedois");
 
 const toggleModaldois = () => {
-    modal.classList.toggle("hide");
-    fade.classList.toggle("hide");
+    modaldois.classList.toggle("hide");
+    fadedois.classList.toggle("hide");
   };
   
   [openModalBdois, closeModalBdois, fadedois].forEach((el) => {
