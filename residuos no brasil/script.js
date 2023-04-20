@@ -27,4 +27,18 @@ const toggleModaldois = () => {
     el.addEventListener("click", () => toggleModaldois());
   });
 
+  const openModalBtres = document.querySelector("#open-tres");
+const closeModalBtres = document.querySelector("#close-tres");
+const modaltres = document.querySelector("#modaltres");
+const fadetres = document.querySelector("#fadetres");
+
+const toggleModaltres = () => {
+    modaltres.classList.toggle("hide");
+    fadetres.classList.toggle("hide");
+  };
+  
+  [openModalBtres, closeModalBtres, fadetres].forEach((el) => {
+    el.addEventListener("click", () => toggleModaltres());
+  });
+
 

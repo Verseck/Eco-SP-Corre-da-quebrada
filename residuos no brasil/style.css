@@ -29,6 +29,7 @@
    color: #f2f2f2;
    background-color: #004c33;
    margin-left: 80px;
+   background-color: #004c33; transition: 0.5s; opacity: 0.9;
  }
 
  .serviços{
@@ -56,7 +57,6 @@
 .lixo{
     margin-top: 100px;
     margin-left: 300px;
-    width: 1200px;
    
 }
 
@@ -65,7 +65,7 @@
   width: 300px;
   height: 200px;
   background-image: url(../assets/Aterro\ controlado.webp);
-  margin-left: 600px;
+  
   
 }
 
@@ -100,7 +100,7 @@
   width: 300px;
   height: 200px;
   background-image: url(../assets/aterro\ sanitario.webp);
-  margin-left: 600px;
+  
 
  }
 
@@ -109,7 +109,6 @@
   width: 300px;
   height: 200px;
   background-image: url(../assets/Aterro\ de\ inertes.webp);
-  margin-left: 600px;
 
  }
 
@@ -135,11 +134,22 @@
  margin-top: 70px;
 }
 
+#open-tres {
+  border: 0;
+ padding: 15px;
+ border-radius: 7px;
+ width: 200px;
+ background-color: #FFFF;
+ color: #004c33;
+ margin-left: 50px;
+ margin-top: 70px;
+}
+
 button:hover {
   opacity: 1;
 }
 
-#fade {
+#fade, #fadedois, #fadetres {
   position: fixed;
   top: 0;
   left: 0;
@@ -149,17 +159,7 @@ button:hover {
   z-index: 5;
 }
 
-#fade, #fadedois {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 5;
-}
-
-#modal, #modaldois {
+#modal, #modaldois, #modaltres {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -175,7 +175,8 @@ button:hover {
 
 #fade,
 #modal, #fadedois,
-#modaldois {
+#modaldois, #fadetres,
+#modaltres {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
@@ -209,16 +210,17 @@ button:hover {
 
 #modal.hide,
 #fade.hide, #modaldois.hide,
-#fadedois.hide  {
+#fadedois.hide, #modaltres.hide,
+#fadetres.hide  {
   opacity: 0;
   pointer-events: none;
 }
 
-#modal.hide, #modaldois.hide {
+#modal.hide, #modaldois.hide, #modaltres.hide {
   top: 0;
 }
 
-#close-modal, #close-dois {
+#close-modal, #close-dois, #close-tres {
   border: 0;
   border-radius: 20px;
   padding: 20px;
@@ -231,5 +233,63 @@ button:hover {
   margin-left: 120px;
 }
 
+.footer{
+  width: 100%;
+  background-color: #0f8118;
+  margin-top: 1600px;
+  height: 300px;
+	float: left;
+	font-size: 18px;
+	padding: 50px 10px 50px 10px;
+  
+}
 
+.left{ 
+	width:100%; 
+	float:left; 
+	border-bottom:1px #222424 solid;
+	border-right:0; 
+	margin-bottom:20px; 
+    padding-bottom:20px;
+}
+
+.title-footer {
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: initial;
+    font-size:26px;
+    width:100%;
+    float:left;
+    margin-bottom:15px;
+}
+
+.title-footer span{
+	color:  #004C33;
+	font-family:'DM Sans', sans-serif;
+	font-weight: bold;
+}
+
+.links{
+	
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	padding: 0;
+  display: block;
+  line-height: 33px;
+  text-decoration: none;
+  color: #fff;
+  font-family:'DM Sans', sans-serif;
+  font-size:16px;
+  transition:0.2s;
+}
+
+.footer .links a:hover { color:#73a077; }
+.footer .Copyright{
+	font-family:'DM Sans', sans-serif;
+	color:  #ffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
  
