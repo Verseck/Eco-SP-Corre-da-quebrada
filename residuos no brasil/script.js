@@ -41,4 +41,18 @@ const toggleModaltres = () => {
     el.addEventListener("click", () => toggleModaltres());
   });
 
+  const openModalBquatro = document.querySelector("#open-quatro");
+const closeModalBquatro = document.querySelector("#close-quatro");
+const modalquatro = document.querySelector("#modalquatro");
+const fadequatro = document.querySelector("#fadequatro");
+
+const toggleModalquatro = () => {
+    modalquatro.classList.toggle("hide");
+    fadequatro.classList.toggle("hide");
+  };
+  
+  [openModalBquatro, closeModalBquatro, fadequatro].forEach((el) => {
+    el.addEventListener("click", () => toggleModalquatro());
+  });
+
 

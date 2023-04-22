@@ -24,7 +24,7 @@
  
  
  .menu{
-   font-size: 25px;
+   font-size: 20px;
    border: 0;
    color: #f2f2f2;
    background-color: #004c33;
@@ -98,7 +98,62 @@
  }
 
  .footer{
-    width: 100%;
-    height: 200px;
-    background-color: #0d5313;
+   width: 100%;
+   background-color: #0f8118;
+   margin-top: 100px;
+   height: 300px;
+    float: left;
+    font-size: 18px;
+    padding: 50px 10px 50px 10px;
+   
  }
+ 
+ .left{ 
+    width:100%; 
+    float:left; 
+    border-bottom:1px #222424 solid;
+    border-right:0; 
+    margin-bottom:20px; 
+     padding-bottom:20px;
+ }
+ 
+ .title-footer {
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: initial;
+     font-size:26px;
+     width:100%;
+     float:left;
+     margin-bottom:15px;
+ }
+ 
+ .title-footer span{
+    color:  #004C33;
+    font-family:'DM Sans', sans-serif;
+    font-weight: bold;
+ }
+ 
+ .links{
+    
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    padding: 0;
+   display: block;
+   line-height: 33px;
+   text-decoration: none;
+   color: #fff;
+   font-family:'DM Sans', sans-serif;
+   font-size:16px;
+   transition:0.2s;
+ }
+ 
+ .footer .links a:hover { color:#73a077; }
+ .footer .Copyright{
+    font-family:'DM Sans', sans-serif;
+    color:  #ffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+ }
+  

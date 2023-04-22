@@ -75,23 +75,13 @@
     background-color: #0d5313;
  }
 
- .saiba{
-  border: none;
-  border-radius: 5%;
-  background-color: #004c3300;
-  color: #f2f2f200;
-  padding: 20px;
-  margin-top: 25%;
-  margin-left: 29%;
-  transform: scale(0.9);
-  
- }
 
- .saiba:hover {
+ #open-modal:hover, #open-dois:hover, #open-tres:hover, #open-quatro:hover {
   background-color: #004c33;
   color: #f2f2f2;
   transform: scale(1);
   transition: 1s;
+  opacity: 100;
 
  }
 
@@ -112,7 +102,7 @@
 
  }
 
- #open-modal {
+ #open-modal, #open-quatro, #open-tres, #open-dois {
   border: 0;
  padding: 15px;
  border-radius: 7px;
@@ -121,6 +111,8 @@
  color: #004c33;
  margin-left: 50px;
  margin-top: 70px;
+ transform: scale(0.9);
+ opacity: 0;
 }
 
 #open-dois {
@@ -145,11 +137,22 @@
  margin-top: 70px;
 }
 
+#open-quatro {
+  border: 0;
+ padding: 15px;
+ border-radius: 7px;
+ width: 200px;
+ background-color: #FFFF;
+ color: #004c33;
+ margin-left: 50px;
+ margin-top: 70px;
+}
+
 button:hover {
   opacity: 1;
 }
 
-#fade, #fadedois, #fadetres {
+#fade, #fadedois, #fadetres, #fadequatro {
   position: fixed;
   top: 0;
   left: 0;
@@ -159,7 +162,7 @@ button:hover {
   z-index: 5;
 }
 
-#modal, #modaldois, #modaltres {
+#modal, #modaldois, #modaltres, #modalquatro {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -176,7 +179,8 @@ button:hover {
 #fade,
 #modal, #fadedois,
 #modaldois, #fadetres,
-#modaltres {
+#modaltres, #fadequatro,
+#modalquatro {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
@@ -211,16 +215,17 @@ button:hover {
 #modal.hide,
 #fade.hide, #modaldois.hide,
 #fadedois.hide, #modaltres.hide,
-#fadetres.hide  {
+#fadetres.hide, #modalquatro.hide,
+#fadequatro.hide  {
   opacity: 0;
   pointer-events: none;
 }
 
-#modal.hide, #modaldois.hide, #modaltres.hide {
+#modal.hide, #modaldois.hide, #modaltres.hide, #modalquatro.hide {
   top: 0;
 }
 
-#close-modal, #close-dois, #close-tres {
+#close-modal, #close-dois, #close-tres, #close-quatro {
   border: 0;
   border-radius: 20px;
   padding: 20px;
@@ -236,7 +241,7 @@ button:hover {
 .footer{
   width: 100%;
   background-color: #0f8118;
-  margin-top: 1600px;
+  margin-top: 1500px;
   height: 300px;
 	float: left;
 	font-size: 18px;
