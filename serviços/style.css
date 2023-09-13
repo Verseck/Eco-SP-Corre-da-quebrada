@@ -1,159 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
-  
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: #f2f2f2;
-    font-family: "Roboto", sans-serif;
-    height: auto;
-  }
-
-  .head{
-    background-color: #004c33;
-    width: 100%;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
  }
  
- .logoeco{
-   width: 395px;
-   height: 131px;
-   object-fit: cover;
+ body {
+   background-color: #f2f2f2;
+   font-family: "Roboto", sans-serif;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
  }
  
+ .head {
+   background-color: #004c33;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+ }
  
- .menu{
+ .logoeco {
+   max-width: 100%;
+   height: auto;
+ }
+ 
+ .menu {
    font-size: 20px;
    border: 0;
    color: #f2f2f2;
    background-color: #004c33;
-   margin-left: 80px;
-   background-color: #004c33; transition: 0.5s; opacity: 0.9;
+   margin-left: 20px;
+   padding: 5px 10px;
+   text-decoration: none;
  }
-
- .serviços{
-  font-size: 70px;
-  text-align: center;
-  color: #004c33;
+ 
+ /* Responsivo para telas menores */
+ @media screen and (max-width: 768px) {
+   .head {
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .menu {
+     margin: 10px 0;
+     font-size: 16px;
+   }
+ 
+   .logoeco {
+     margin-bottom: 20px;
+   }
  }
-
- .dv{
-    background-color: #6EA4CA;
-    width: 200px;
- }
-
- .texto{
-    width: 800px;
-    margin-left: 350px ;
-    font-size: 20px;
-    color: #004c33;
- }
-
- .um{
-    
-    width: 300px;
-
- }
-
+ 
+ /* O restante do seu CSS permanece o mesmo */
  
  
- .vinte{
-    width: 300px;
-    background-color: #ffff;margin-left: 100px;
-    height: 400px;
-    margin-top: 100px;
-    margin-left: 580px;
+ 
+ 
+ 
+ .serviços {
+   font-size: 70px;
+   text-align: center;
+   color: #004c33;
  }
-
- .letra{
-    text-align: center;
-    color: #0d5313;
+ 
+ .dv {
+   background-color: #6EA4CA;
+   width: 200px;
  }
-
- .letras{
-    text-align: center;
-    color: #0d5313;
-    font-size: 18px;
+ 
+ .texto {
+   width: 800px;
+   margin-left: auto; /* Centralize horizontalmente */
+   margin-right: auto; /* Centralize horizontalmente */
+   font-size: 20px;
+   color: #004c33;
  }
-
- .quarenta{
-    width: 300px;
-    background-color: #ffff;margin-left: 100px;
-    height: 400px;
-    
-    margin-left: 580px;
-    margin-top: 100px;
-    
-   
-
+ 
+ .um {
+   width: 300px;
  }
-
- .dois{
-    width: 300px;
+ 
+ .vinte {
+   width: 300px;
+   background-color: #ffff;
+   margin-left: auto; /* Centralize horizontalmente */
+   margin-right: auto; /* Centralize horizontalmente */
+   height: 400px;
+   margin-top: 100px;
  }
-
- .tres{
-    width: 300px;
+ 
+ .letra {
+   text-align: center;
+   color: #0d5313;
  }
-
- .footer{
+ 
+ .letras {
+   text-align: center;
+   color: #0d5313;
+   font-size: 18px;
+ }
+ 
+ .quarenta {
+   width: 300px;
+   background-color: #ffff;
+   margin-left: auto; /* Centralize horizontalmente */
+   margin-right: auto; /* Centralize horizontalmente */
+   height: 400px;
+   margin-top: 100px;
+ }
+ 
+ .dois {
+   width: 300px;
+ }
+ 
+ .tres {
+   width: 300px;
+ }
+ 
+ .footer {
    width: 100%;
    background-color: #0f8118;
    margin-top: 100px;
    height: 300px;
-    float: left;
-    font-size: 18px;
-    padding: 50px 10px 50px 10px;
-   
+   display: flex;
+   flex-direction: column;
+   justify-content: center; /* Centralize verticalmente */
+   align-items: center; /* Centralize horizontalmente */
+   font-size: 18px;
+   padding: 50px 10px 50px 10px;
  }
  
- .left{ 
-    width:100%; 
-    float:left; 
-    border-bottom:1px #222424 solid;
-    border-right:0; 
-    margin-bottom:20px; 
-     padding-bottom:20px;
+ .left {
+   width: 100%;
+   float: left;
+   border-bottom: 1px #222424 solid;
+   border-right: 0;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
  }
  
  .title-footer {
-    color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: initial;
-     font-size:26px;
-     width:100%;
-     float:left;
-     margin-bottom:15px;
+   color: #ffffff;
+   font-family: 'DM Sans', sans-serif;
+   font-weight: initial;
+   font-size: 26px;
+   width: 100%;
+   float: left;
+   margin-bottom: 15px;
  }
  
- .title-footer span{
-    color:  #004C33;
-    font-family:'DM Sans', sans-serif;
-    font-weight: bold;
+ .title-footer span {
+   color: #004C33;
+   font-family: 'DM Sans', sans-serif;
+   font-weight: bold;
  }
  
- .links{
-    
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
-    padding: 0;
+ .links {
+   width: 100%;
+   float: left;
+   margin-bottom: 20px;
+   padding: 0;
    display: block;
    line-height: 33px;
    text-decoration: none;
    color: #fff;
-   font-family:'DM Sans', sans-serif;
-   font-size:16px;
-   transition:0.2s;
+   font-family: 'DM Sans', sans-serif;
+   font-size: 16px;
+   transition: 0.2s;
  }
  
- .footer .links a:hover { color:#73a077; }
- .footer .Copyright{
-    font-family:'DM Sans', sans-serif;
-    color:  #ffff;
-    font-size: 14px;
-    font-weight: normal;
-    margin-bottom: 10px;
+ .footer .links a:hover {
+   color: #73a077;
  }
-  
+ 
+ .footer .Copyright {
+   font-family: 'DM Sans', sans-serif;
+   color: #ffff;
+   font-size: 14px;
+   font-weight: normal;
+   margin-bottom: 10px;
+ }
+ 

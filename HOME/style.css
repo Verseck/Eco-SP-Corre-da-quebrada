@@ -1,159 +1,216 @@
+/* Estilos gerais */
 * {
-    margin: 0;
-    padding: 0;
-  
-    box-sizing: border-box;
-  }
-   
-  html{
-    width: fit-content;
-
-}
-  
-  body {
-    background-color: #f2f2f2;
-    font-family: "Roboto", sans-serif;
-    height: auto;
-    width: 100%;
-  }
-  
-  .head{
-   background-color: #004c33;
-   width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logoeco{
-  width: 395px;
-  height: 131px;
-  object-fit: cover;
+html {
+  width: 100%;
 }
 
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0; /* Remova margens para evitar espaços em branco */
+  overflow-x: hidden; /* Evite a barra de rolagem horizontal em telas menores */
+}
 
-.menu{
+/* Cabeçalho */
+.head {
+  background-color: #004c33;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adicione algum espaço interno */
+}
+
+.logoeco {
+  max-width: 100%; /* Faça o logotipo se ajustar ao contêiner */
+  height: auto; /* Mantenha a proporção da imagem */
+}
+
+.menu {
   font-size: 20px;
   border: 0;
   color: #f2f2f2;
   background-color: #004c33;
-  margin-left: 80px;
-   background-color: #004c33; transition: 0.5s; opacity: 0.9;
+  margin-left: 20px; /* Reduza a margem para dispositivos menores */
+  padding: 5px 10px; /* Adicione algum espaço interno ao botão */
+  text-decoration: none; /* Remova a decoração do link */
 }
 
-.urna{
+/* Seção principal */
+.urna {
   background-color: #f2f2f2;
-  height: 1000px;
-  
+  padding: 20px; /* Adicione algum espaço interno */
 }
 
-.solucao{
- text-align: center;
- color: #004c33;
- 
+.solucao {
+  text-align: center;
+  color: #004c33;
+  font-size: 24px; /* Ajuste o tamanho da fonte para dispositivos menores */
 }
 
-.eletronica{
+.principal {
+  display: flex;
+  flex-wrap: wrap; /* Faça os elementos envolverem quando não couberem na tela */
+  justify-content: center;
+  gap: 20px; /* Adicione algum espaço entre os elementos */
+}
+
+.eletronica {
   background-color: #004C33;
   border: #0f8118 10px solid;
-  width: 300px;
-  height: 367px;
+  width: 100%; /* Faça com que os elementos ocupem toda a largura */
+  max-width: 300px; /* Defina uma largura máxima */
   text-align: center;
   color: #FFFF;
-  margin-left: 20px;
-  margin-top: 100px;
-}
-
-.serv{
-  color: #FFFF;
-  height: 80px;
-}
-
-.saiba{
-  padding: 5px;
-  border-radius: 7px;
-  border: 0;
-  background-color: #FFFF;
-  color: #004c33;
   margin-top: 20px;
-  text-align: center;
-  
+  padding: 20px; /* Adicione algum espaço interno */
 }
 
-
-.principal{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: auto;
-  width: 52%;
+.serv {
+  color: #FFFF;
+  font-size: 18px; /* Ajuste o tamanho da fonte para dispositivos menores */
 }
 
-.botao{
- width: 100%;
- height: 50px;
- margin-top: 40px;
+.saiba {
+  padding: 5px 10px; /* Adicione algum espaço interno ao botão */
+  padding: 10px 20px; /* Aumente o espaço interno para tornar o botão mais visível */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  border: none; /* Remova a borda */
+  background-color: #66bda0; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 18px; /* Tamanho da fonte */
+  cursor: pointer; /* Mude o cursor para parecer um botão clicável */
+  transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave de cores */
+
 }
 
-article{
-  height: 600px;
-  background-color: #0f8118;
+.saiba:hover {
+  background-color: #266d26; /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
 }
 
-.sobre{
- text-align: center;
- font-size: 60px;
- color: #FFFF;
+.botao {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px; /* Ajuste a margem para dispositivos menores */
 }
 
-#tudo{
-  width: 50%;
-  background-color: black;
-  margin-left: 370px;
-  text-align: center;
+/* Seção "Sobre Nós" */
+#tudo {
+  width: 100%;
   background-color: #0f8118;
   color: #FFFF;
-  font-size: 20px;
-}
-
-.Leia{
- border: 0;
- padding: 10px;
- border-radius: 20px;
- width: 200px;
- background-color: #0c3c60;
- color: #FFFF;
-}
-
-.formu{
-background-color:#004c33;
-width: 100%;
-height: 700px;
-}
-
-.fale{
-  font-size: 60px;
   text-align: center;
+  padding: 20px; /* Adicione algum espaço interno */
+}
+
+.sobre {
+  text-align: center;
+  font-size: 40px; /* Ajuste o tamanho da fonte para dispositivos menores */
+}
+
+/* Formulário de contato */
+.formu {
+  background-color: #004c33;
+  width: 100%;
+  padding: 20px; /* Adicione algum espaço interno */
+  color: white;
+}
+
+.fale {
+  text-align: center;
+  font-size: 40px; /* Ajuste o tamanho da fonte para dispositivos menores */
   color: #FFFF;
 }
 
-.formulario{
+.formulario {
   text-align: center;
   color: white;
 }
 
+/* Rodapé */
+footer {
+  background-color: #0f8118;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+}
+#modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 700px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 700px;
+  max-width: 90%;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  display: none; /* Esconda o modal por padrão */
+}
+
 #open-modal {
-  border: 0;
- padding: 15px;
- border-radius: 7px;
- width: 200px;
- background-color: #FFFF;
- color: #004c33;
- margin-left: 43%;
+    border: 0;
+    padding: 15px;
+    border-radius: 7px;
+    width: 200px;
+    background-color: #FFFF;
+    color: #004c33;
+    margin-left: 43%;
+    cursor: pointer; /* Adicione esta linha para definir o cursor como ponteiro */
+    transition: background-color 0.3s, color 0.3s; /* Adicione esta linha para suavizar a transição */
+  }
+  
+  #open-modal:hover {
+    background-color: #004c33;
+    color: #FFFF;
+  }
+
+#open-modal:hover {
+  background-color: #004c33;
+  color: #FFFF;
 }
 
-button:hover {
-  opacity: 1;
+#modal.show {
+  display: block;
 }
 
-#fade {
+#fade.show {
+  display: block;
+}
+
+#modal.hide {
+  display: none;
+}
+
+#fade.hide {
+  display: none;
+}
+
+.fade {
   position: fixed;
   top: 0;
   left: 0;
@@ -161,192 +218,28 @@ button:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 5;
+  display: none; /* Esconda o fade por padrão */
 }
 
-#modal {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 700px;
-  max-width: 90%;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  z-index: 10;
+.close-modal-button {
+  background-color: #004c33; /* Cor de fundo verde desejada */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remova a borda */
+  padding: 10px 20px; /* Adicione algum espaço interno para tornar o botão visível */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  cursor: pointer; /* Mude o cursor para parecer um botão clicável */
+  transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave de cores */
+
 }
 
-#modal-dois {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 700px;
-  max-width: 90%;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  z-index: 10;
+.close-modal-button:hover {
+  background-color: #266d26; /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
 }
+Essas regras de estilo definirão a cor de fundo verde e outras propriedades para o botão de fechar e também fornecerão uma mudança de cor suave quando o mouse passar sobre o botão. Certifique-se de adicionar a classe close-modal-button ao botão de fechar no seu HTML e incluir essas regras CSS no seu arquivo de estilo para obter o efeito desejado.
 
-#fade,
-#modal {
-  transition: 0.5s;
-  opacity: 1;
-  pointer-events: all;
-}
 
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  color: #004c33;
-}
 
-.modal-body p {
-  margin-bottom: 1rem;
-}
 
-#modal.hide,
-#fade.hide {
-  opacity: 0;
-  pointer-events: none;
-}
 
-#modal.hide {
-  top: 0;
-}
 
-.contato{
-    color: #FFFF;
-    width: 200px;
-    margin-left: 620px;
- 
-}
-
-.ctt{
-  text-decoration: none;
-  color: #FFFF;
-}
-
-#close-modal{
-  border: 0;
-  border-radius: 20px;
-  padding: 20px;
-  background-color: #004c33;
-  color: #FFFF;
-}
-
-.arvr{
-  width: 500px;
-  margin-left: 120px;
-}
-
-footer{
-	background-color: #0f8118;
-	width: 100%;
-	height: 300px;
-	float: left;
-	font-size: 18px;
-	padding: 50px 10px 50px 10px;
-}
-.footer .left{ 
-	width:100%; 
-	float:left; 
-	border-bottom:1px #222424 solid;
-	border-right:0; 
-	margin-bottom:20px; 
-    padding-bottom:20px;
-}
-.footer .title-footer {
-	color: #ffffff;
-	font-family: 'DM Sans', sans-serif;
-	font-weight: initial;
-    font-size:26px;
-    width:100%;
-    float:left;
-    margin-bottom:15px;
-}
-.footer .title-footer span{
-	color:  #004C33;
-	font-family:'DM Sans', sans-serif;
-	font-weight: bold;
-}
-
-.footer .links{
-	
-	width: 100%;
-	float: left;
-	color:  #ffffff;
-	margin-bottom: 20px;
-	padding: 0;
-}
-.footer .links a{
-    display: block;
-    line-height: 33px;
-    text-decoration: none;
-    color: #fff;
-    font-family:'DM Sans', sans-serif;
-    font-size:16px;
-    transition:0.3s;
-}
-.footer .links a:hover { color:#0f8118; }
-.footer .Copyright{
-	font-family:'DM Sans', sans-serif;
-	color:  #ffff;
-	font-size: 14px;
-	font-weight: normal;
-	margin-bottom: 10px;
-}
-
-.footer .footer-icons{
-	
-	width:100%;
-	float:left;
-	margin-bottom:20px;
-}
-.footer .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 50px;
-    font-family:'DM Sans', sans-serif;
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;	
-	line-height: 35px;
-	margin-bottom: 5px;
-	transition:0.3s;
-}
-.footer .footer-icons a:hover{ background-color:#2fcacf; }
-
-.footer .right   { width:100%; float:left; }
-.footer .right p {
-	font-family: 'DM Sans', sans-serif;
-	font-weight: initial;
-	display: inline-block;
-	vertical-align: top;
-	font-size: 30px;
-	color: #ffffff;
-}
-
-.text-dois{
-  display: flex;
-  align-items: center;
-  margin-left: 450px;
-  gap: 20px;
-}
-
-.text-um{
-  display: flex;
-  align-items: center;
-  margin-left: 450px;
-  gap: 20px;
-}

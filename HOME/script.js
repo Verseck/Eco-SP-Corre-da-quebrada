@@ -4,16 +4,15 @@ const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
 
 const toggleModal = () => {
-  modal.classList.toggle("hide");
-  fade.classList.toggle("hide");
+  modal.classList.toggle("show");
+  fade.classList.toggle("show");
 };
 
-[openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
-});
+openModalButton.addEventListener("click", () => toggleModal());
+closeModalButton.addEventListener("click", () => toggleModal());
 
-const nono = document.querySelector("#nono")
+const nono = document.querySelector("#nono");
 
-function mostrar(){alert(nono.value+"     Sua mensagem foi enviada")
-  
+function mostrar() {
+  alert(nono.value + "     Sua mensagem foi enviada");
 }
